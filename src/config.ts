@@ -12,7 +12,7 @@ export const db = {
   maxPoolSize: parseInt(process.env.DB_MAX_POOL_SIZE || "10"),
 };
 
-export const corsUrl = "*";
+export const corsUrl =process.env.CORS_URL || "https://sonu-chat.netlify.app/";
 
 export const cookieValidity = process.env.COOKIE_VALIDITY_SEC || "0";
 
